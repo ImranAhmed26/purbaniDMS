@@ -2,53 +2,53 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-import Logo from "../public/assets/logo.png";
+import Logo from "../public/assets/Logo_Purbani.png";
 import NavLinks from "../constants/navlinks.js";
-import SearchIcon from "../public/assets/search.svg";
-import FavoriteIcon from "../public/assets/favourite.svg";
-import CartIcon from "../public/assets/cart.svg";
-import ProfileIcon from "../public/assets/profile-image.png";
 
 const Navbar = () => {
   const [searchText, setSearchText] = useState("");
   const [profileImage, setProfileImage] = useState("");
   const [profileName, setProfileName] = useState("");
 
-  useEffect(() => {
-    setProfileImage(ProfileIcon);
-    setProfileName("Anne Doe");
-  });
-
   const handleSearch = () => {
     "logic for handling search";
   };
 
   return (
-    <div>
-      <div className="w-full h-20 px-12 py-3.5 bg-white text-lg drop-shadow-md flex items-center sticky z-30 top-0">
-        <div className="flex items-center w-1/2">
+      <div className="flex justify-center w-full">
+        <div className="flex items-center justify-between w-3/4 bg-amber-300 h-24">
           <div>
-            <Image src={Logo} width={57} height={48} alt={"logo"} />
+            <Image src={Logo} width={184} height={48} alt={"logo"} />
           </div>
           <div>
-            <div className=" flex gap-3 px-4 lg:gap-5 xl:gap-7 2xl:gap-9 lg:px-7 xl:px-12 2xl:px-28 text-base lg:text-lg xl:text-xl py-2 ">
-              {NavLinks.navlinks.map((items, i) => {
-                return (
-                  <div key={isNaN}>
-                    <Link href="/">
-                      <a>{items.name}</a>
-                    </Link>
-                  </div>
-                );
-              })}
+            <div className="text-lg flex gap-9 font-semibold">
+              <Link className="" href={"/"}>
+                <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+                 Mission  
+                </a>
+              </Link>
+              <Link href={"/"}>
+                <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+                 Vision  
+                </a>
+              </Link>
+              <Link href={"/"}>
+                <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+                  Values
+                </a>
+              </Link>
+              <Link href={"/"}>
+                <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+                  Notices
+                </a>
+              </Link>
             </div>
           </div>
-        </div>
-        <div className="flex items-center w-1/2">
-          <div className="flex items-center justify-end w-full pt-2 pl-2">FORM</div>
+          <div className="">
+            <button className="w-24 h-11 rounded-xl bg-fuchsia-700 text-color_white hover:bg-color_white hover:text-fuchsia-700 transition-all duration-500">Forms</button>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 
