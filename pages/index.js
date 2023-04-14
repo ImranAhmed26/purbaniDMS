@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import Body from "../components/Body";
-import BgImage from "../public/assets/Images/bg_primary.png";
+import BgImage from "../public/assets/Images/Group 34.png";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Image src={BgImage} alt="" layout="fill" className="-z-10"/>
+        <Image src={BgImage} alt="" layout="responsive" className="-z-10"/>
         <Navbar />
         <Body />
       </main>
