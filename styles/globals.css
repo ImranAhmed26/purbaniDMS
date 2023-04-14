@@ -19,3 +19,7 @@ body {
   -ms-overflow-style: none; /*Hide Scrollbar in IE and Edge */
   scrollbar-width: none; /*Hide Scrollbar in Firefox */
 }
+
+.bg-main-global {
+  background: url('../public/assets/Images/bg_primary.png') no-repeat center center/cover;
+}
