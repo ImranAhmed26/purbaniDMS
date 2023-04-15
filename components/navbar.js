@@ -15,8 +15,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-center w-full bg-main-global h-screen relative z-20 ">
-      <div className="flex items-center justify-between w-3/4  h-24">
+    <div className="flex justify-center w-full relative z-20 ">
+      <div className="flex items-center justify-between w-3/4  h-24 border-b border-gray-400">
         <div>
           <Image src={Logo} width={184} height={48} alt={"logo"} />
         </div>
