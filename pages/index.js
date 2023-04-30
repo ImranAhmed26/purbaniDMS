@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import Body from "../components/Body";
+import DownloadCard from "../components/DownloadCard";
+import GlanceCard from "../components/GlanceCard";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
 
       <main className="bg-main-global h-screen">
         <Navbar />
-        <Body />
+        <DownloadCard />
+        <GlanceCard />
       </main>
 
       <footer>
