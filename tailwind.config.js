@@ -14,7 +14,8 @@ module.exports = {
     colors: ({ colors }) => ({
       color_dark: "#00071B",
       color_gray: "#C4C4C4",
-      color_blue: "#002482",
+      color_brand: "#A3238D",
+      color_secondary: "#A3238D",
       color_white: "#F9FAFF",
       color_dark_gray: "#272727",
       color_green: "#0A8200",

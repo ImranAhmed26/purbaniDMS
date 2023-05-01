@@ -3,6 +3,9 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 import DownloadCard from "../components/DownloadCard";
 import GlanceCard from "../components/GlanceCard";
+import MissionAndVision from "../components/MissionAndVission";
+import OurValues from "../components/OurValues";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -17,16 +20,12 @@ export default function Home() {
         <Navbar />
         <DownloadCard />
         <GlanceCard />
+        <MissionAndVision />
+        <OurValues />
+        <Footer />
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {/* <span>Footer</span> */}
-        </a>
       </footer>
     </div>
   );
