@@ -22,3 +22,6 @@ body {
 .bg-main-global {
   background: url('../public/assets/Images/bg_primary.png') no-repeat center center/cover;
 }
+.bg-vision {
+  background: url('../public/assets/Images/vision.png') no-repeat center center/cover;
+}

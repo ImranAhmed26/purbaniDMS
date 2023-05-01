@@ -23,29 +23,29 @@ const Navbar = () => {
         <div>
           <div className="text-lg flex gap-9 font-semibold">
             <Link className="" href={"/"}>
-              <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+              <a className="text-color_white hover:text-color_brand transition-all duration-500">
                 Mission
               </a>
             </Link>
             <Link href={"/"}>
-              <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+              <a className="text-color_white hover:text-color_brand transition-all duration-500">
                 Vision
               </a>
             </Link>
             <Link href={"/"}>
-              <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+              <a className="text-color_white hover:text-color_brand transition-all duration-500">
                 Values
               </a>
             </Link>
             <Link href={"/"}>
-              <a className="text-color_white hover:text-fuchsia-700 transition-all duration-500">
+              <a className="text-color_white hover:text-color_brand transition-all duration-500">
                 Notices
               </a>
             </Link>
           </div>
         </div>
         <div className="">
-          <button className="w-24 h-11 rounded-xl bg-fuchsia-700 text-color_white hover:bg-color_white hover:text-fuchsia-700 transition-all duration-500">
+          <button className="w-24 h-11 rounded-xl bg-color_brand text-color_white hover:bg-color_white hover:text-color_brand transition-all duration-500">
             Forms
           </button>
         </div>
