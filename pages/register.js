@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Navbar from "../components/navbar";
 import Image from "next/image";
 import Logo from "../public/assets/Logo_Purbani.png";
@@ -37,7 +37,7 @@ const Register = () => {
       } else if (status === 200) {
         console.log("Registration successful");
         console.log(data);
-        router.push("/");
+        router.push("/dashboard");
       }
     });
   };
