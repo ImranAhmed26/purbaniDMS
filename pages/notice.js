@@ -28,13 +28,14 @@ const Dashboard = () => {
                 className="flex flex-col bg-black/50 rounded-lg w-[280px] pt-2 px-10 h-full"
               >
                 <div className="text-color_brand text-5xl font-bold py-2 ">{idx + 1}</div>
-                <div className="text-white text-xl font-bold pt-4 min-h-[130px]">
-                  Office Hour During The Month of Ramadan 2023
-                </div>
+                <div className="text-white text-xl font-bold pt-4 min-h-[130px]">{item.notice}</div>
                 <div className="w-full inline-flex justify-end py-6">
-                  <button className="text-2xl text-color_brand hover:text-white transition-all duration-200">
+                  <a
+                    href={`${item.link}`}
+                    className="text-2xl text-color_brand hover:text-white transition-all duration-200"
+                  >
                     <FaDownload />
-                  </button>
+                  </a>
                 </div>
               </div>
             );
