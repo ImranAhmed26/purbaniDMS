@@ -41,6 +41,9 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
+      <div className="text-white text-center pt-6 text-xl capitalize">
+        {`${state.user?.name}, Welcome to Purbani Document Mangement System`}
+      </div>
     </div>
   );
 };
