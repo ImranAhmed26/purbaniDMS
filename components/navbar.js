@@ -66,7 +66,7 @@ const Navbar = () => {
                   Values
                 </a>
               </Link>
-              <Link href={"/"}>
+              <Link href={"/notice"}>
                 <a className="text-color_white hover:text-color_brand transition-all duration-500">
                   Notices
                 </a>
@@ -77,11 +77,11 @@ const Navbar = () => {
         <div className={`${router.pathname != "/" ? "w-1/2 inline-flex justify-end" : ""} `}>
           {state.user ? (
             <div>
-              <div className="text-white text-2xl capitalize font-semibold font-sans">
+              {/* <div className="text-white text-2xl capitalize font-semibold font-sans">
                 {state.user?.name}
-              </div>
+              </div> */}
               <div
-                className="text-white px-2 capitalize font-semibold font-sans cursor-pointer"
+                className="w-20 h-10 inline-flex justify-center items-center text-white px-2 capitalize font-semibold font-sans cursor-pointer  rounded-xl bg-color_brand hover:bg-color_white hover:text-color_brand transition-all duration-500"
                 onClick={handleLogout}
               >{`Logout`}</div>
             </div>
