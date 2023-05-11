@@ -24,7 +24,7 @@ const Sustainibility = () => {
           {SustainibilityLinks.map((item, idx) => {
             return (
               <div key={idx} className='flex flex-row'>
-                <div className='text-white text-lg font-bold px-4'>
+                <div className='text-lg font-bold px-4'>
                   {` ${idx + 1}.  ${item.name}`}
                 </div>
                 <a
