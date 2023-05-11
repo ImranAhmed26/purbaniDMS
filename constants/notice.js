@@ -25,13 +25,16 @@ export const Notices = [
   },
 ]
 
-export const DashboardLinks = [
+export const SustainibilityLinks = [
   {
-    name: 'Sustainibility',
+    name: 'Monitoring result for Karim Textiles Limited on site Karim Textiles Limited',
     link: 'https://drive.google.com/u/0/uc?id=13vWlpMQv_S2zTQjgwnQ5viFuH8GeLjED&export=download',
   },
+]
+
+export const ItLinks = [
   {
-    name: 'IT',
+    name: 'Requisition Form RAW for IT',
     link: 'https://drive.google.com/u/0/uc?id=1_P_l6FvXaxilN4ExOlYZkimIn-cv_Gpf&export=download',
   },
 ]
