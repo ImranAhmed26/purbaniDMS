@@ -71,6 +71,16 @@ const Navbar = () => {
                   Notices
                 </a>
               </Link>
+              <Link href={"/dashboard"}>
+                <a className="text-color_white hover:text-color_brand transition-all duration-500">
+                  Policies
+                </a>
+              </Link>
+              <Link href={"/"}>
+                <a className="text-color_white hover:text-color_brand transition-all duration-500">
+                  Knowledge
+                </a>
+              </Link>
             </div>
           </div>
         )}

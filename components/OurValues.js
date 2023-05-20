@@ -1,5 +1,11 @@
 import React from "react";
 import { AiFillBug } from "react-icons/ai";
+import Image from "next/image";
+import Creativitly from "../public/assets/Logos/Creativity_Logo.png"
+import Centricity from "../public/assets/Logos/Customer_Centricity_Logo.png"
+import Fairness from "../public/assets/Logos/Fairness_Logo.png"
+import Responsibility from "../public/assets/Logos/Responsibility_Logo.png"
+import Safety from "../public/assets/Logos/Safety_Logo.png"
 
 const OurValues = () => {
   return (
@@ -17,7 +23,16 @@ const OurValues = () => {
                   <div className="w-40 flex flex-col gap-2 items-center ">
                     <div>1.</div>
                     <div className="text-7xl">
-                      <AiFillBug />
+                    <Image
+                    src={Centricity}
+                    width={80}
+                    height={80}
+                    alt={"logo"}
+                    onClick={() => {
+                      router.push("/");
+                    }}
+                    className="cursor-pointer"
+                   />
                     </div>
                     <div>Customer Centricity</div>
                   </div>
@@ -26,34 +41,70 @@ const OurValues = () => {
                   <div className=" flex flex-col gap-2 items-center ">
                     <div>2.</div>
                     <div className="text-7xl">
-                      <AiFillBug />
+                    <Image
+                    src={Responsibility}
+                    width={80}
+                    height={80}
+                    alt={"logo"}
+                    onClick={() => {
+                      router.push("/");
+                    }}
+                    className="cursor-pointer"
+                   />
                     </div>
                     <div>Responsibility</div>
                   </div>
                 </th>
                 <th>
                   <div className=" flex flex-col gap-2 items-center ">
-                    <div>2.</div>
+                    <div>3.</div>
                     <div className="text-7xl">
-                      <AiFillBug />
+                    <Image
+                    src={Creativitly}
+                    width={80}
+                    height={80}
+                    alt={"logo"}
+                    onClick={() => {
+                      router.push("/");
+                    }}
+                    className="cursor-pointer"
+                   />
                     </div>
                     <div>Creativity and Quality</div>
                   </div>
                 </th>
                 <th>
                   <div className=" flex flex-col gap-2 items-center ">
-                    <div>2.</div>
+                    <div>4.</div>
                     <div className="text-7xl">
-                      <AiFillBug />
+                    <Image
+                    src={Fairness}
+                    width={100}
+                    height={100}
+                    alt={"logo"}
+                    onClick={() => {
+                      router.push("/");
+                    }}
+                    className="cursor-pointer"
+                   />
                     </div>
                     <div>Fairness</div>
                   </div>
                 </th>
                 <th>
                   <div className=" flex flex-col gap-2 items-center ">
-                    <div>2.</div>
+                    <div>5.</div>
                     <div className="text-7xl">
-                      <AiFillBug />
+                    <Image
+                    src={Safety}
+                    width={80}
+                    height={80}
+                    alt={"logo"}
+                    onClick={() => {
+                      router.push("/");
+                    }}
+                    className="cursor-pointer"
+                   />
                     </div>
                     <div>Safety</div>
                   </div>
