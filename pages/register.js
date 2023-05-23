@@ -128,8 +128,9 @@ const Register = () => {
               )}
               {registrationFailed == true && (
                 <div className='flex justify-center relative'>
-                  <div className='absolute top-1 text-rose-500'>
-                    Account registration failed. Check your credentials
+                  <div className='absolute top-1 text-rose-500 text-center'>
+                    Account registration failed.<br></br> Check your credentials
+                    and try again.
                   </div>
                 </div>
               )}
