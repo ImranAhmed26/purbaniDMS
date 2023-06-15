@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Logo from "../public/assets/Logo_Purbani.png";
+import Logo from "../../public/assets/Logo_Purbani.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { authContext } from "../context/authContext";
+import { authContext } from "../../context/authContext";
 
 const DownloadCard = () => {
   const router = useRouter();

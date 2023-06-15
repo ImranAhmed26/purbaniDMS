@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useContext } from "react";
 import { useRouter } from "next/router";
-import { authContext } from "../context/authContext";
+import { authContext } from "../../context/authContext";
 
-import Logo from "../public/assets/Logo_Purbani.png";
-import NavLinks from "../constants/navlinks.js";
-import { GET } from "../api/api";
+import Logo from "../../public/assets/Logo_Purbani.png";
+import NavLinks from "../../constants/navlinks.js";
+import { GET } from "../../api/api";
 
 const Navbar = () => {
   const [searchText, setSearchText] = useState("");

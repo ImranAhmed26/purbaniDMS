@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import Navbar from "../components/navbar";
-import DownloadCard from "../components/DownloadCard";
-import GlanceCard from "../components/GlanceCard";
-import MissionAndVision from "../components/MissionAndVission";
-import OurValues from "../components/OurValues";
-import Footer from "../components/Footer";
+import DownloadCard from "../components/landingPage/DownloadCard";
+import GlanceCard from "../components/landingPage/GlanceCard";
+import MissionAndVision from "../components/landingPage/MissionAndVission";
+import OurValues from "../components/landingPage/OurValues";
+import Footer from "../components/landingPage/Footer";
 
 export default function Home() {
   return (
@@ -16,8 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-main-global h-screen">
-        <Navbar />
+      <main className="">
+        {/* <Navbar /> */}
         <DownloadCard />
         <GlanceCard />
         <MissionAndVision />
@@ -25,8 +23,7 @@ export default function Home() {
         <Footer />
       </main>
 
-      <footer>
-      </footer>
+      <footer></footer>
     </div>
   );
 }
